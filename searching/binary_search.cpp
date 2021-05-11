@@ -1,9 +1,9 @@
 int bsearch(int arr[],int n,int x)
 {
-  int low=0,int high=0;
+  int low=0,int high=n-1;
   while(low<=high)
   {
-    mid=(low+high)/2;
+    int id=(low+high)/2;
     if(arr[mid]==x)
       return mid;
     if(arr[mid]>x)
